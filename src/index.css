@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+}
+.status{
+  margin-bottom: 10px;
+}
+.main-bord{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.board-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square{
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  height:100px;
+  width: 100px;
+  transition: 0.7s;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square:hover{
+  background-color: rgba(224, 255, 255, 0.4);
+  color: #000;
+}
+/* Border  */
+.board-row:nth-child(1) .square:nth-child(1){
+  border-top: none;
+  border-left: none;
+}
+.board-row:nth-child(1) .square:nth-child(2){
+  border-top: none;
+}
+.board-row:nth-child(1) .square:nth-child(3){
+  border-top: none;
+  border-right: none;
+}
+
+.board-row:nth-child(2) .square:nth-child(1){
+  border-left: none;
+}
+.board-row:nth-child(2) .square:nth-child(3){
+  border-right: none;
+}
+
+
+.board-row:nth-child(3) .square:nth-child(1){
+  border-bottom: none;
+  border-left: none;
+}
+.board-row:nth-child(3) .square:nth-child(2){
+  border-bottom: none;
+}
+.board-row:nth-child(3) .square:nth-child(3){
+  border-right: none;
+  border-bottom: none;
+}
+
+
+
+
+.move{
+  background-color: lightgrey;
+  padding: 7px 50px;
+  border-radius: 3px;
+  display: inline-block;
+}
