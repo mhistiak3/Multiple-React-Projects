@@ -20,7 +20,7 @@ const Clock = ({timeManage}) => {
   //   Name
   const handleDBLClick = () => {
     let name = prompt("Enter Name");
-    localStorage.setItem("name", name==null?'Name':name);
+    localStorage.setItem("name", name === ''? 'Name':name);
     let nweName = localStorage.getItem("name");
     setName(nweName);
   };

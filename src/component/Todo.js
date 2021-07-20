@@ -19,14 +19,18 @@ const Todo = () => {
       setIsTodo(true);
       localStorage.setItem("todo", todo);
       localStorage.setItem("isTodo", true);
+      
     }
   };
 
   const handleDelete = () => {
     localStorage.removeItem("todo");
     localStorage.removeItem("isTodo");
+    localStorage.removeItem("check");
+   
     setTodo("");
     setIsTodo(false);
+    setCheck(false)
   };
 
   const handleCheck = () => {

@@ -19,7 +19,7 @@ const Main = () => {
     }
   }, []);
   let style = {
-    background:`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/1600x900/?neture,Good-${timeManage})`,
+    background:`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/1600x900/?neture,water,codeing)`,
   }
   return (
     <div className="app" style={style}>
