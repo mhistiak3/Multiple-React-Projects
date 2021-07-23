@@ -1,9 +1,11 @@
+import Main from "./component/index";
+
 
 function App() {
   return (
-   <div>
-     Hello
-   </div>
+   <>
+     <Main/>
+   </>
   );
 }
 

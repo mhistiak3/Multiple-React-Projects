@@ -1,0 +1,64 @@
+.shadow {
+  width: 80%;
+  border-radius: 7px;
+  height: 500px;
+  background-color: lightsalmon;
+  background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/1600x900/?nature,water")
+    ;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+/* Switch  */
+
+.checkbox {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 50px;
+  height: 23px;
+  border: 2px solid #f00;
+  border-radius: 20px;
+  background: #f1e1e1;
+  position: relative;
+  box-sizing: border-box;
+}
+.checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: rgba(234, 7, 7, 50);
+  border: 2px solid #ea0707;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(12%, 15%);
+  transition: all 0.3s ease-in-out;
+}
+.checkbox input[type="checkbox"]::after {
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+  transform: translate(200%, 15%);
+  transition: all 0.3s ease-in-out;
+}
+.checkbox input[type="checkbox"]:checked::after {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.checkbox label {
+  margin: 20px;
+}
